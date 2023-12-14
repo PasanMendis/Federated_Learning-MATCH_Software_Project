@@ -115,7 +115,7 @@ def main():
     model.to(device)
     top_val =0
     # Define Epoch count
-    epoch_count = 7
+    epoch_count = 5
     for epoch in range(epoch_count):  # Number of federated learning rounds
         
         train_loss,train_acc = train(model, train_loader, optimizer, criterion, device)
