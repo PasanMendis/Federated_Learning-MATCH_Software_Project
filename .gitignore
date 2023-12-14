@@ -1,0 +1,14 @@
+/.vscode
+/data
+/global_model/data
+/global_model/epoch7
+/global_model/epoch10
+/global_model/New folder
+/global_model/Previous runs
+/global_model/runs
+/global_model_updates_1
+/global_model_updates_3
+/OtherFiles
+/runs
+/__pycache__
+/global_model/__pycache__
