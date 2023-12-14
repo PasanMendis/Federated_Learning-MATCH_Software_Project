@@ -31,13 +31,6 @@ class LeNet(nn.Module):
       x = self.classifier(x.view(x.size(0), -1))
       return x
 
-
-criterion = nn.CrossEntropyLoss()
-
-transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.5,), (0.5,))])
-train_dataset = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=64, shuffle=True)
-
 def train(model, train_loader, optimizer, criterion, device):
     model.train()
     train_loss =0
