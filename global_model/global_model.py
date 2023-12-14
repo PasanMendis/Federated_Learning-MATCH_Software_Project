@@ -6,7 +6,7 @@ from torch.utils.tensorboard.writer import SummaryWriter
 import ssl
 import logging
 
-# Global model (AlexNet)
+# Global model (LeNet)
 class LeNet(nn.Module):
   def __init__(self, num_classes=10, **kwargs):
       super(LeNet, self).__init__()
